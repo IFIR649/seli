@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>UPAM</title>
+  <meta charset="UTF-8">
+  <title>Login/Registration Form Transition</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ 
+<div class="cont">
+  <div class="form sign-in">
+    <h2>Universidad Politecnica de Amozoc</h2>
+    <form action="login.php" method="post">
+      <label>
+        <span>Usuario</span>
+        <input type="email" name="username" required />
+      </label>
+      <label>
+        <span>Contraseña</span>
+        <input type="password" name="password" required />
+      </label>
+      <button type="submit" class="submit">Ingresar</button>
+    </form>
+    <p class="forgot-pass">¿Olvidaste tu contraseña?</p>
+  </div>
+  <div class="sub-cont">
+    <div class="img">
+      <div class="img__text m--up">
+        <h2>Registro Universitario</h2>
+        <p>¡Regístrate!</p>
+      </div>
+      <div class="img__text m--in">
+        <h2>¿Ya formas parte?</h2>
+        <p>Ingresa con tu cuenta!</p>
+      </div>
+      <div class="img__btn">
+        <span class="m--up">Registrarse</span>
+        <span class="m--in">Ingresar</span>
+      </div>
+    </div>
+    <div class="form sign-up">
+      <h2>¡Sé parte de nuestra Familia!</h2>
+      <form action="register.php" method="post">
+        <label>
+          <span>Nombre</span>
+          <input type="text" name="nombre" required />
+        </label>
+        <label>
+          <span>apellido paterno</span>
+          <input type="text" name="paterno" required />
+        </label>
+        <label>
+          <span>apellido materno</span>
+          <input type="text" name="materno" required />
+        <label>
+          <span>Correo</span>
+          <input type="email" name="correo" required />
+        </label>
+        <label>
+          <span>Contraseña</span>
+          <input type="password" name="contrasena" required />
+        </label>
+        <button type="submit" class="submit">Registrarse</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
